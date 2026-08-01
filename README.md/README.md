@@ -1,45 +1,42 @@
-# Smart Expense Tracker API
+# Expense Tracker API
 
-A REST API built using FastAPI to manage personal expenses.
+A RESTful API built with **FastAPI** for managing personal expenses.  
+This project allows users to create, view, update, and delete expense records through API endpoints.
 
-## Features
+## 🚀 Features
 
-- Add Expense
-- View All Expenses
-- Filter by Category
-- Calculate Total Expenses
-- Delete Expense
+- Create new expenses
+- View all expenses
+- View expense by ID
+- Update expense details
+- Delete expenses
+- API documentation using Swagger UI
+- Database integration
+- Automated API testing
 
-## Installation
+## 🛠️ Technologies Used
 
-```bash
-pip install -r requirements.txt
-```
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- Pytest
+- Uvicorn
 
-## Run Server
+## 📂 Project Structure
 
-```bash
-uvicorn src.main:app --reload
-```
+```text
+expense-tracker-api/
+│
+├── src/
+│   ├── main.py
+│   ├── models.py
+│   └── ...
+│
+├── tests/
+│   └── test_api.py
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
 
-## Run Tests
-
-```bash
-pytest
-```
-
-## API Endpoints
-
-| Method | Endpoint |
-|---------|----------|
-| GET | / |
-| POST | /expenses |
-| GET | /expenses |
-| GET | /expenses/total |
-| DELETE | /expenses/{expense_id} |
-
-## Swagger Documentation
-
-Open:
-
-http://127.0.0.1:8000/docs
